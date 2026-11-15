@@ -1,0 +1,16 @@
+Do NOT change any game code, tests, or settings. Documentation only. Create a folder /docs and write everything from the ACTUAL code in this project. Do not invent features, files, numbers or flows. If something is unclear, say so.
+
+Create these files in Markdown, with diagrams in Mermaid code blocks:
+
+1. 01-overview.md: problem, target audience (state honestly that it currently suits ages 12+), the idea, the 8 missions, the 5 resources, what is simulated vs real.
+2. 02-use-cases.md: actors (Player, Rule-based Advisor, Game Engine), a use-case list with preconditions, main flow, alternative flows and postconditions for: start/continue mission, complete an objective, board/exit rover, enter/exit shelter, make a commander decision, answer a knowledge check, view science notes, view final report, replay. Include a Mermaid use-case style diagram.
+3. 03-uml.md: (a) component/class diagram of the real modules (UI components, engine, content files, report, guidance, save), (b) sequence diagram of one game tick and of a commander decision (chooseEvent), (c) state diagram of the 8 objectives, (d) state diagram of storm phases (quiet, warning, active, passed), (e) activity/flow diagram of a full mission from start to win or loss.
+4. 04-architecture.md: tech stack (React, Three.js/React Three Fiber, Vite), folder map with what each important file does, data flow, localStorage save and old-save compatibility, build and deployment.
+5. 05-game-logic.md: tables of resources, drain rates per difficulty, objective effects, event options and costs, storm rules, shelter protection, win/loss conditions, rating rules. Take numbers from the code and say which difficulty they apply to.
+6. 06-science-and-sources.md: the 10 science topics, each NASA source (title, URL), the archived DONKI reference, and what is simulated and not real.
+7. 07-testing.md: which tests exist, how to run them, what they cover, and known untested areas (touch controls on real devices, real-device performance).
+8. 08-ai-usage.md: how Replit Agent was used (phases, what it generated, what the team decided and checked). Leave a clearly marked placeholder where the team should add its own role details.
+9. 09-limitations-and-roadmap.md: honest limits and next steps.
+10. README.md in /docs: index linking all files, plus how to run the game locally.
+
+Keep language simple and concise. Make sure every Mermaid diagram is valid syntax. At the end, list the files created and any place where you were unsure.

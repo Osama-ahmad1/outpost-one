@@ -1,0 +1,28 @@
+.mr-outcome { display: block; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; padding: 24px 16px; }
+.mr-outcome .outcome-inner { margin: 0 auto; min-width: 0; }
+.mr-outcome .mr-reason { font: 12.5px/1.5 var(--mono); color: var(--amber); border-left: 2px solid var(--amber); padding-left: 10px; margin: 6px 0; }
+.mr-outcome .mr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 18px 0; }
+.mr-outcome .mr-sec { min-width: 0; background: var(--panel); border: 1px solid var(--line); border-top: 2px solid var(--o2); padding: 12px 14px; font-size: 13px; }
+.mr-outcome .mr-sec h2 { font: 600 11px var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--amber); margin: 0 0 10px; }
+.mr-outcome .mr-sec p { margin: 6px 0; color: #cfc6b5; }
+.mr-outcome .mr-dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; margin: 8px 0; }
+.mr-outcome .mr-dl dt { font: 11px var(--mono); color: var(--dim); }
+.mr-outcome .mr-dl dd { margin: 0; overflow-wrap: anywhere; }
+.mr-outcome .mr-meters .meter { width: 100%; margin-bottom: 6px; }
+.mr-outcome .mr-table { width: 100%; border-collapse: collapse; font: 11px var(--mono); margin-top: 8px; }
+.mr-outcome .mr-table th, .mr-outcome .mr-table td { text-align: left; padding: 3px 4px; border-bottom: 1px solid var(--line); }
+.mr-outcome .mr-table th { color: var(--dim); font-weight: 500; }
+.mr-outcome .mr-details { border-top: 1px solid var(--line); padding: 6px 0; }
+.mr-outcome .mr-details summary { cursor: pointer; color: var(--amber); font: 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.mr-outcome .mr-list { padding-left: 18px; margin: 6px 0; }
+.mr-outcome .mr-list li { margin-bottom: 6px; overflow-wrap: anywhere; }
+.mr-outcome .mr-list time { font-family: var(--mono); color: var(--dim); }
+.mr-outcome .mr-list span { display: block; font: 11px var(--mono); }
+.mr-outcome .mr-actual { color: var(--o2); }
+.mr-outcome .mr-stated, .mr-outcome .mr-na { color: var(--dim); }
+.mr-outcome .mr-note { font: 11px var(--mono); color: var(--dim) !important; }
+.mr-outcome .mr-warn { font: 11px var(--mono); color: var(--amber) !important; }
+.mr-outcome .mr-fail { margin: 0; padding-left: 16px; color: var(--red); }
+.mr-outcome .mr-log { margin: 12px 0; }
+.mr-outcome .mr-log .log.inline { margin-top: 8px; }
+@media (max-height: 500px) { .mr-outcome h1 { font-size: 34px; } .mr-outcome { padding: 12px; } }

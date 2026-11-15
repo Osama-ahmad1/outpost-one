@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "OUTPOST ONE – LUNAR SURVIVAL"
+description = "An immersive playable lunar survival strategy game with real-time resources, astronaut exploration, rover expeditions, scientific simulated emergencies and a complete mission campaign."
+version = "1.0.0"
+id = "artifacts/lunar-survival"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25174
+
+[services.development]
+run = "pnpm --filter @workspace/lunar-survival run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/lunar-survival", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/lunar-survival/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25174"
+BASE_PATH = "/"

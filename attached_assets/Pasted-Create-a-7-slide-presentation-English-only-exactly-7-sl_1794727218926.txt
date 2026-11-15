@@ -1,0 +1,16 @@
+Create a 7-slide presentation (English only, exactly 7 slides, no more) for the NASA Space Apps hackathon challenge about teaching kids real engineering trade-offs through a lunar outpost game. Do NOT change any game code, files, or settings. Only create the presentation file (.pptx if possible) and tell me where it is.
+
+Project: OUTPOST ONE - Lunar Survival. A 3D browser game, React + Three.js + Vite, runs fully in the browser (no server, no account, no download). Live link: https://outpost-one-lunar-survival.replit.app
+
+Style: dark space theme matching the game (near-black navy background, amber accent, teal secondary). Large readable text, max 5 short bullets per slide, no long paragraphs. Use real screenshots of the game if you can capture them from the running app; otherwise leave clearly marked image placeholders. Do not invent statistics, awards, user numbers, or testing results.
+
+Slides:
+1. Title: "OUTPOST ONE - Lunar Survival". Tagline: "Command a lunar outpost. No choice is free." Educational simulation, not live NASA data.
+2. The problem: space STEM content is often too abstract or too technical, so students see mission outcomes but not the trade-offs behind them.
+3. The solution: a playable lunar outpost. 8 missions, 5 linked resources (oxygen, power, water, food, radiation shield), a rover, a storm shelter. Show a game screenshot.
+4. The core mechanic - trade-offs: commander decisions (dust on solar array, cooling-loop leak, battery temperature). Every option costs something. Example: patch the leak (-5 water, -3 energy) or vent the section (-8 oxygen, +4 energy). Rule-based advisor explains the science (not AI).
+5. Science and NASA sources: Mission Briefing has 10 science topics, each with a NASA source link and a "how the game simplifies this" line. Solar particle events and radiation are linked to an archived NASA DONKI record (X1.7 flare, 14 May 2024), labeled as historical reference only. Be honest: game values are simulated and not real spacecraft specifications, and the game does not use live NASA data.
+6. How we used AI: built with Replit Agent. The AI wrote and tested React code, the learning cards and quiz, the final report, and the build. The team chose the idea, directed each phase, play-tested, checked the NASA sources, and decided what to keep. State this clearly and honestly.
+7. Impact and next steps: current limits (aimed at ages 12+; English only; no live DONKI data; difficulty tuning on Hard in progress). Next: kids mode for ages 7-12 with simpler text and pausing while reading, live DONKI data, Arabic version, classroom use. End with the game link.
+
+Add short speaker notes for each slide (2 to 3 sentences). Keep all claims consistent with this brief. Report briefly what you created.

@@ -1,0 +1,19 @@
+.structure-info-hint { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .structure-info-hint { display: inline-flex; align-items: center; gap: 6px; padding: 10px; font-size: 14px; }
+  .act-zone { display: flex; align-items: center; gap: 8px; }
+}
+.structure-info-layer { position: absolute; inset: 0; z-index: 25; pointer-events: auto; }
+.structure-info-card { position: absolute; top: 96px; bottom: 110px; left: max(18px, calc(50% - 180px)); width: min(360px, calc(100vw - 200px)); max-height: 560px; overflow-y: auto; overscroll-behavior: contain; padding: 16px; box-sizing: border-box; background: #0c111c; color: var(--bone); border: 1px solid var(--line); border-top: 2px solid var(--amber); font-size: 14px; line-height: 1.45; box-shadow: 0 8px 30px #0008; }
+.structure-info-card header { display: flex; gap: 8px; align-items: start; justify-content: space-between; }
+.structure-info-card h3 { margin: 0; font-size: 20px; }
+.structure-info-card h4 { margin: 12px 0 4px; font-size: 14px; color: var(--amber); }
+.structure-info-card p { margin: 4px 0 10px; font-size: 14px; }
+.structure-info-card a { color: var(--amber); overflow-wrap: anywhere; }
+.structure-info-card .ibtn { font-size: 14px; flex-shrink: 0; }
+.structure-info-card svg { color: var(--amber); display: block; margin: 8px auto; }
+.structure-info-paused { color: var(--o2); }
+.structure-info-disclaimer { border-top: 1px solid var(--line); padding-top: 10px; }
+@media (max-width: 860px) {
+  .structure-info-card { top: 92px; bottom: 225px; left: 10px; width: calc(100vw - 140px); }
+}

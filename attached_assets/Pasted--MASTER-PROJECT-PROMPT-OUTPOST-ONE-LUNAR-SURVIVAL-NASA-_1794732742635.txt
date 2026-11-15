@@ -1,0 +1,563 @@
+# MASTER PROJECT PROMPT
+# OUTPOST ONE – LUNAR SURVIVAL
+### NASA Space Apps Challenge – Complete Game Vision & Development Specification
+
+Act as a Senior Game Developer, Educational Game Designer, Space Science Researcher, UX/UI Designer, and Full-Stack Engineer.
+
+Your mission is to understand, maintain, and improve **OUTPOST ONE – Lunar Survival**, an interactive educational lunar survival simulation designed to help students understand the engineering challenges behind space exploration.
+
+The objective is not simply to create a space-themed game. The objective is to transform complex space engineering concepts into an interactive learning experience where students make decisions, manage limited resources, understand scientific trade-offs, and experience the consequences of their choices.
+
+---
+
+# PART 1 — PROJECT IDENTITY
+
+**Project Name:** OUTPOST ONE – Lunar Survival
+
+**Competition:** NASA Space Apps Challenge
+
+**Project Category:** Educational Space Simulation / STEM Learning Game
+
+**Target Audience:** Students aged 12 and above.
+
+**Platform:** Browser-based 3D educational game.
+
+**Technology:**
+- React
+- JavaScript / TypeScript as used in the existing project
+- Three.js
+- Vite
+
+**Core Concept:**
+
+Players become commanders of a lunar outpost. Their responsibility is to maintain the outpost, manage interconnected resources, respond to unexpected emergencies, and complete scientific missions.
+
+Every decision has a cost.
+
+There is no universally perfect decision. Players must understand the situation, evaluate available options, and choose the most appropriate solution based on the current mission conditions.
+
+The game is an educational simulation, not a real spacecraft control system and not a source of live NASA telemetry.
+
+---
+
+# PART 2 — THE PROBLEM WE IDENTIFIED
+
+## The Educational Problem
+
+Space STEM education often presents two extremes:
+
+1. Space content can be too abstract, making it difficult for students to understand how real missions operate.
+2. Technical explanations can be too complicated for younger learners.
+
+Students may learn about spacecraft, astronauts, lunar exploration, and space missions, but they do not always experience the engineering decisions behind those missions.
+
+They learn what happened, but not necessarily:
+
+- Why engineers selected a particular solution.
+- What alternatives were available.
+- What resources were sacrificed.
+- What risks were involved.
+- How one decision affected other systems.
+- Why engineering decisions involve trade-offs.
+
+## The Gap
+
+The missing element is an opportunity for students to experience engineering decision-making rather than simply reading about it.
+
+The educational challenge is to make these complex decisions understandable, interactive, and meaningful.
+
+---
+
+# PART 3 — HOW WE THOUGHT ABOUT SOLVING THE PROBLEM
+
+Do not treat the solution as an ordinary game idea.
+
+Build the project around the following problem-solving methodology.
+
+## Step 1: Identify the Learning Gap
+
+We first identified that students needed more than theoretical explanations about space exploration.
+
+They needed to understand how engineering decisions influence mission survival.
+
+## Step 2: Rethink Traditional Learning
+
+We asked:
+
+"What if students could experience the decisions behind a space mission instead of only learning about its results?"
+
+This led us to move from passive learning toward interactive, decision-based learning.
+
+## Step 3: Choose a Meaningful Environment
+
+We selected a simulated lunar outpost because lunar exploration introduces several interconnected engineering challenges:
+
+- Limited resources.
+- Extreme environmental conditions.
+- Radiation exposure.
+- Power generation and storage.
+- Water management.
+- Food production.
+- Life-support requirements.
+- Unexpected mission emergencies.
+
+A lunar outpost provides a meaningful environment in which students can explore these challenges.
+
+## Step 4: Connect the Resources
+
+We designed a system in which five major resources influence one another:
+
+1. Oxygen.
+2. Water.
+3. Power.
+4. Food.
+5. Radiation protection.
+
+These resources should not feel like independent game statistics.
+
+They represent interconnected systems that require careful management.
+
+## Step 5: Introduce Real Engineering Trade-offs
+
+We introduced decisions where each available option has advantages and disadvantages.
+
+For example, a cooling-loop leak may require players to choose between repairing the system or taking another simulated emergency response.
+
+Each option affects different resources and may influence future mission conditions.
+
+## Step 6: Connect Decisions to Science
+
+Every major event should explain:
+
+- What happened.
+- Why it happened.
+- Which scientific concept explains it.
+- What engineering challenge it creates.
+- Why the selected response has certain consequences.
+
+The goal is to ensure that gameplay itself becomes the learning experience.
+
+## Final Design Philosophy
+
+"Don't just teach students how space missions work. Let them experience why engineers make difficult decisions."
+
+---
+
+# PART 4 — THE GAME EXPERIENCE
+
+## Player Role
+
+The player becomes the commander of a lunar outpost.
+
+The player must:
+
+- Monitor the outpost.
+- Manage resources.
+- Explore the lunar environment.
+- Respond to emergencies.
+- Make engineering decisions.
+- Complete mission objectives.
+- Keep the outpost operational.
+
+## Game Structure
+
+Preserve the existing eight-mission structure.
+
+Each mission should contain:
+
+1. Mission briefing.
+2. Mission objective.
+3. Environmental or engineering challenge.
+4. Available decisions.
+5. Resource consequences.
+6. Scientific explanation.
+7. Mission progress.
+8. Educational takeaway.
+
+Do not replace the existing missions with invented content.
+
+Inspect the current mission data before modifying anything.
+
+---
+
+# PART 5 — RESOURCE MANAGEMENT SYSTEM
+
+Maintain the five existing resource categories.
+
+## 1. Oxygen
+
+Represents the outpost's oxygen availability and life-support needs.
+
+## 2. Water
+
+Represents water availability and its importance to crew support and other outpost operations.
+
+## 3. Power
+
+Represents available electrical energy for outpost systems and equipment.
+
+## 4. Food
+
+Represents the food supply and the challenges of sustaining a crew.
+
+## 5. Radiation Protection
+
+Represents the effectiveness of protective systems against radiation exposure.
+
+### Important Requirements
+
+- Resource values must be interconnected through the existing simulation rules.
+- Decisions must produce understandable consequences.
+- Resource depletion must have meaningful gameplay effects.
+- Mission success and failure conditions must remain consistent.
+- Avoid unrealistic or scientifically misleading claims.
+- Clearly identify all numerical values as simplified game simulation values.
+
+---
+
+# PART 6 — CORE GAMEPLAY MECHANICS
+
+## A. Lunar Outpost Interaction
+
+Maintain the existing 3D interactive lunar outpost.
+
+Players should be able to interact with the existing modules and discover their purposes.
+
+Preserve:
+
+- Solar panels.
+- Greenhouse.
+- Radiation shield.
+- Life-support unit.
+- Habitat.
+- Crew-related interactions.
+- Rover.
+- Storm shelter.
+
+When a module is relevant to a mission event, make the interaction clear.
+
+## B. Mission Events
+
+Preserve the existing events and improve their educational explanations.
+
+Examples include:
+
+- Dust accumulation on solar panels.
+- Cooling-loop leaks.
+- Battery temperature problems.
+- Solar activity and radiation-related challenges.
+- Environmental hazards.
+
+Each event must have a clear scientific explanation and meaningful decision options.
+
+## C. Decision System
+
+For every decision, show:
+
+- The situation.
+- Available choices.
+- Resource costs.
+- Expected benefits.
+- Possible risks.
+- Scientific reasoning.
+
+After a player confirms a decision, show the actual resource changes and explain the consequences.
+
+Do not promise consequences that are not implemented in the simulation engine.
+
+## D. Rule-Based Mission Advisor
+
+Maintain the existing rule-based advisor.
+
+It must:
+
+- Explain the science behind decisions.
+- Provide contextual guidance.
+- Explain resource consequences.
+- Help students understand the trade-offs.
+
+Do not describe this advisor as artificial intelligence if it uses predefined rules.
+
+---
+
+# PART 7 — NASA SCIENCE CONNECTION
+
+Scientific credibility is essential.
+
+Review the existing ten science topics and their NASA references.
+
+For every topic:
+
+1. Identify the scientific concept.
+2. Provide a relevant NASA source.
+3. Explain how it relates to the lunar outpost.
+4. Connect it to an actual gameplay event.
+5. Explain the simplified simulation model.
+6. Distinguish scientific facts from invented gameplay values.
+
+## Source Verification
+
+Use reliable NASA resources where relevant, including:
+
+- NASA Moon exploration resources.
+- NASA Human Research Program.
+- NASA life-support research.
+- NASA solar radiation and space weather resources.
+- NASA power systems research.
+- NASA environmental and lunar exploration resources.
+
+Use NASA DONKI only when the relevant record can be verified.
+
+For historical events:
+
+- Identify the event correctly.
+- Provide its date.
+- Link to the actual record.
+- Explain what the record measures.
+- Do not confuse solar flares with direct measurements of particle radiation.
+
+## Scientific Integrity Rules
+
+Never:
+
+- Invent NASA sources.
+- Invent NASA measurements.
+- Claim NASA officially endorses the project.
+- Present simulation values as real spacecraft specifications.
+- Claim live NASA data integration when it does not exist.
+
+Clearly display:
+
+"Educational Simulation – Not Live NASA Data."
+
+---
+
+# PART 8 — EDUCATIONAL EXPERIENCE
+
+The game must teach students through experience.
+
+Improve the existing learning cards, quiz, and mission explanations.
+
+## Learning Objectives
+
+By completing the game, students should have opportunities to understand:
+
+- Why resource management matters in space.
+- How different outpost systems depend on one another.
+- Why lunar environmental conditions create engineering challenges.
+- How radiation protection works at a conceptual level.
+- Why engineers evaluate multiple solutions.
+- How decisions affect mission conditions.
+
+## Learning Cards
+
+Each educational card should contain:
+
+- Scientific concept.
+- Simple explanation.
+- Real-world relevance.
+- Connection to the current mission.
+- NASA reference.
+
+## Quiz
+
+Maintain the existing quiz and ensure that:
+
+- Questions are based on actual game content.
+- Correct answers are explained.
+- Incorrect answers provide useful feedback.
+- Questions evaluate understanding rather than memorization alone.
+
+## Learning Assessment
+
+If practical, add an optional pre-game and post-game assessment.
+
+Do not claim educational improvement without real testing.
+
+If students have not participated in an actual study, describe the assessment as a future evaluation feature.
+
+---
+
+# PART 9 — FINAL MISSION REPORT
+
+Maintain and improve the final report.
+
+It should include:
+
+- Mission completion status.
+- Final resource levels.
+- Important decisions.
+- Major mission events.
+- Resource losses and gains.
+- Scientific concepts encountered.
+- Educational takeaways.
+- Areas for improvement.
+
+The report should explain how the player's decisions influenced the mission.
+
+Use actual simulation data only.
+
+---
+
+# PART 10 — VISUAL DESIGN AND USER EXPERIENCE
+
+Preserve the existing OUTPOST ONE visual identity.
+
+The game should feel like a professional lunar mission simulation.
+
+Maintain:
+
+- Immersive lunar environment.
+- 3D outpost.
+- Clear resource dashboard.
+- Mission control interface.
+- Interactive mission events.
+- Existing visual effects.
+- Existing navigation.
+- Existing sound settings.
+
+Improve clarity and usability without unnecessarily redesigning the interface.
+
+Ensure:
+
+- Responsive desktop and laptop layouts.
+- Readable educational explanations.
+- Clear decision feedback.
+- Keyboard and mouse accessibility.
+- Consistent interaction behavior.
+
+---
+
+# PART 11 — ACCESSIBILITY AND FUTURE DEVELOPMENT
+
+Keep the existing English experience functional.
+
+Prepare the architecture for:
+
+- Arabic language support.
+- Kids Mode for ages 7–12.
+- Simplified educational explanations.
+- Classroom use.
+- Optional future live NASA data integration.
+
+These are future features unless actually implemented and tested.
+
+Do not represent planned features as completed functionality.
+
+---
+
+# PART 12 — TEAM CONTRIBUTION AND AI TRANSPARENCY
+
+Document the actual division of responsibilities.
+
+The team:
+
+- Selected the problem and project concept.
+- Directed the development process.
+- Reviewed scientific sources.
+- Evaluated gameplay.
+- Tested the experience.
+- Made decisions about the final project.
+
+Replit Agent assisted with development and other implementation tasks.
+
+Clearly distinguish human decisions from AI-assisted implementation.
+
+Do not invent team activities or claim work that was not performed.
+
+---
+
+# PART 13 — FINAL QUALITY ASSURANCE
+
+Before completing any changes:
+
+1. Inspect the entire existing codebase.
+2. Understand the current architecture.
+3. Identify incomplete or weak features.
+4. Prepare a targeted improvement plan.
+5. Implement changes incrementally.
+6. Preserve existing functionality.
+
+Then test:
+
+- All eight missions.
+- All major decision paths.
+- Resource calculations.
+- Resource boundaries.
+- Mission success conditions.
+- Mission failure conditions.
+- Restart functionality.
+- Module interactions.
+- Mission advisor.
+- Educational cards.
+- Quiz.
+- Final mission report.
+- NASA source links.
+- Responsive behavior.
+
+Run the existing tests, type checks, and production build.
+
+Fix regressions introduced by your changes.
+
+Do not remove tests simply to make the project pass.
+
+---
+
+# PART 14 — FINAL PROJECT DELIVERABLES
+
+After development, provide:
+
+1. A summary of the original educational problem.
+2. The problem-solving methodology used to develop the concept.
+3. An explanation of why a lunar outpost was selected.
+4. An explanation of the five interconnected resources.
+5. A description of all eight missions.
+6. An explanation of the engineering trade-off system.
+7. A list of verified NASA scientific references.
+8. A list of unverified or incomplete references.
+9. Educational objectives and assessment features.
+10. Technical testing results.
+11. Remaining limitations.
+12. Features planned for future development.
+
+Also update the existing seven-slide presentation to an eight-slide structure by inserting:
+
+"FROM PROBLEM TO IDEA"
+
+immediately after:
+
+"THE PROBLEM"
+
+and before:
+
+"THE SOLUTION".
+
+The new slide must explain the team's problem-solving approach, the transition from identifying the educational gap to designing an interactive lunar mission, and the reasoning behind the five interconnected resources.
+
+Preserve the presentation's visual identity and use only verified project information.
+
+---
+
+# FINAL INSTRUCTIONS
+
+The most important objective is to make OUTPOST ONE more than a space-themed game.
+
+It must be an educational experience where students:
+
+- Understand a scientific challenge.
+- Evaluate different engineering options.
+- Make a decision.
+- Observe its consequences.
+- Learn the scientific reasoning behind it.
+
+The project should demonstrate a clear connection between the problem, the thinking process, the proposed solution, the actual game mechanics, and the educational impact.
+
+Do not rebuild the project.
+
+Do not remove working features.
+
+Do not invent scientific evidence or achievements.
+
+Inspect first, improve carefully, test thoroughly, and report honestly.
+
+**The final goal: OUTPOST ONE should demonstrate how interactive simulation can turn complex space engineering concepts into understandable and meaningful learning experiences.**
